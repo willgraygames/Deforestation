@@ -35,34 +35,3 @@ public class CreatureType : MonoBehaviour
         
     }
 }
-
-//Enumerations for different creature properties
-public enum CreatureElement
-{
-    Fire,
-    Earth,
-    Water,
-    Air,
-}
-
-public enum CreatureFood
-{
-    Any,
-    Meat,
-    Vegetables,
-    Fruit
-}
-
-public enum CreatureSpecies
-{
-    Fireboi,
-    Earthboi,
-    Waterboi,
-    Airboi
-}
-
-public enum CreatureGender
-{
-    Male,
-    Female
-}
