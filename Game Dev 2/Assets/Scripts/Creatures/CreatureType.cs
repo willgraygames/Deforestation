@@ -19,6 +19,8 @@ public class CreatureType : MonoBehaviour
     public float maxCreatureHealth;
     public float creatureHappiness;
     public float maxCreatureHappiness;
+    public float creatureHunger;
+    public float maxCreatureHunger;
 
     NavMeshAgent myNav;
 

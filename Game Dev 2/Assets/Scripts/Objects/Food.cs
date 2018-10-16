@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Food : Interactable {
 
-    int foodValue;
+    public float foodValue;
+    public CreatureFood myFoodType;
 
 
 	// Use this for initialization
