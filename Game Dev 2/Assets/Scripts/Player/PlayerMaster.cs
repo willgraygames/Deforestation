@@ -9,8 +9,7 @@ public class PlayerMaster : MonoBehaviour
 
     //Current target variables
     public Image targetHealth;                  //Reference to current target's heatlh bar
-    public Image cursor;                        //Reference to player's cursor
-    public Sprite[] cursorImages;               //Array of different cursor icons for different target types
+    public GameObject cursor;                   //Reference to player's cursor
     public Text interactText;                   //Reference to the text naming the player's current target
     public float interactRange;                 //The maximum range from the player to a target to be able to interact with it
     RaycastHit hit;                             //RaycastHit for when the player hits something while attacking
@@ -42,26 +41,26 @@ public class PlayerMaster : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
         }
 
-        /*//Sends out a raycast forward from the player to check if they are looking at something within range that is interactable. If they are, display the target's name and change the cursor 
+        //Sends out a raycast forward from the player to check if they are looking at something within range that is interactable. If they are, display the target's name and change the cursor 
         //image to the appropriate sprite for the target object. Currently only doors have a dedicated sprite.
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, interactRange))
         {
-            if (hit.collider.gameObject.tag == "Interactable" || hit.collider.gameObject.tag == "Door")
+            if (hit.collider.gameObject.tag == "Creature" || hit.collider.gameObject.tag == "Machine" || hit.collider.gameObject.tag == "Food")
             {
                 interactText.text = hit.collider.gameObject.name;
-                cursor.sprite = cursorImages[1];
+                cursor.SetActive(true);
             }
             else
             {
                 interactText.text = "";
-                cursor.sprite = cursorImages[0];
+                cursor.SetActive(false);
             }
         }
         else
         {
             interactText.text = "";
-            cursor.sprite = cursorImages[0];
-        }*/
+            cursor.SetActive(false);
+        }
     }
 
     //Player movement is handled inside of FixedUpdate due to the use of Unity's rigidbody physics system

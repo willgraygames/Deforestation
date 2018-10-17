@@ -29,7 +29,7 @@ public class PlayerCamera : MonoBehaviour
         smoothV.y = Mathf.Lerp(smoothV.y, mouseMovement.y, 1f / smoothing);
         mouseLook += smoothV;
         //Clamps the camera's movement along the y axis, limiting how far the player can look up and down
-        mouseLook.y = Mathf.Clamp(mouseLook.y, -45f, 0f);
+        mouseLook.y = Mathf.Clamp(mouseLook.y, -70f, 70f);
         //Rotates the camera based on the mouseLook Vector2's y axis
         transform.localRotation = Quaternion.AngleAxis(-mouseLook.y, Vector3.right);
         //Rotates the player based on the mouseLook Vector2's x axis

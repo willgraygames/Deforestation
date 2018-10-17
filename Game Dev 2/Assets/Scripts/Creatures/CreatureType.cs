@@ -19,6 +19,8 @@ public class CreatureType : MonoBehaviour
     public float maxCreatureHealth;
     public float creatureHappiness;
     public float maxCreatureHappiness;
+    public float creatureHunger;
+    public float maxCreatureHunger;
 
     NavMeshAgent myNav;
 
@@ -34,35 +36,4 @@ public class CreatureType : MonoBehaviour
     {
         
     }
-}
-
-//Enumerations for different creature properties
-public enum CreatureElement
-{
-    Fire,
-    Earth,
-    Water,
-    Air,
-}
-
-public enum CreatureFood
-{
-    Any,
-    Meat,
-    Vegetables,
-    Fruit
-}
-
-public enum CreatureSpecies
-{
-    Fireboi,
-    Earthboi,
-    Waterboi,
-    Airboi
-}
-
-public enum CreatureGender
-{
-    Male,
-    Female
 }
