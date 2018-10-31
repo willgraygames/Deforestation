@@ -13,6 +13,7 @@ public class CreatureType : MonoBehaviour
     public CreatureFood myCreatureFood;
     public CreatureGender myCreatureGender;
     public GameObject drop;
+	public CreatureSpecies[] acceptableMates;
 
     [Header("Creature Stats")]
     public float creatureHealth;

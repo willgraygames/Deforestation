@@ -9,17 +9,22 @@ public class CreatureMovement : MonoBehaviour {
     public float speed;
     public NavMeshAgent myNav;
     public Transform currentTarget;
+	public GameObject currentBreedTarget;
+	public GameObject offspring;
     CreatureType myCreatureInfo;
 
     Coroutine activeEatCoroutine;
+	Coroutine activeBreedCoroutine;
 
     public float wanderRadius;
     public float wanderTimer;
     private bool wander;
     private bool isEating;
+	private bool isBreeding;
 
     public float checkRadius;
-    public LayerMask checkLayers;
+    public LayerMask checkDropLayer;
+	public LayerMask checkCreatureLayer;
     private float distanceFromTarget;
 
     private Transform target;
@@ -36,11 +41,12 @@ public class CreatureMovement : MonoBehaviour {
 
     void Update ()
     {
-        timer += Time.deltaTime;
+		float rand = UnityEngine.Random.Range (0, 3);
+		timer += Time.deltaTime * rand;
 
         if (!isEating)
         {
-            Collider[] colliders = Physics.OverlapSphere(transform.position, checkRadius, checkLayers);
+            Collider[] colliders = Physics.OverlapSphere(transform.position, checkRadius, checkDropLayer);
             Array.Sort(colliders, new DistanceCompare(transform));
             CheckForFood(colliders);
         } else
@@ -58,6 +64,22 @@ public class CreatureMovement : MonoBehaviour {
                 wander = true;
             }
         }
+		if (!isBreeding && myCreatureInfo.creatureHunger >= (myCreatureInfo.maxCreatureHunger * 0.9f)) {
+			Collider[] colliders = Physics.OverlapSphere (transform.position, checkRadius, checkCreatureLayer);
+			Array.Sort (colliders, new DistanceCompare (transform));
+			CheckForPartner (colliders);
+		} else if (isBreeding) {
+			float lastDist = distanceFromTarget;
+			if (currentTarget != null) {
+				distanceFromTarget = Vector3.Distance (transform.position, currentTarget.position);
+				agent.SetDestination (currentTarget.position);
+			} else if (currentTarget == null) {
+				print ("Breed stopped");
+				StopCoroutine (activeBreedCoroutine);
+				isBreeding = false;
+				wander = true;
+			}
+		}
 
         if (timer >= wanderTimer && wander == true)
         {
@@ -77,7 +99,7 @@ public class CreatureMovement : MonoBehaviour {
                 {
                     if (myCreatureInfo.creatureHunger < myCreatureInfo.maxCreatureHunger)
                     {
-                        if (!isEating)
+						if (!isEating && !isBreeding)
                         {
                             wander = false;
                             isEating = true;
@@ -90,6 +112,43 @@ public class CreatureMovement : MonoBehaviour {
             }
         }
     }
+
+	void CheckForPartner (Collider[] colliders) 
+	{
+		for (int i = 0; i < colliders.Length; i++) 
+		{
+			if (colliders [i].gameObject.tag == "Creature") 
+			{
+				for (int a = 0; a < myCreatureInfo.acceptableMates.Length; a++) 
+				{
+					if (colliders [i].gameObject.GetComponent<CreatureType>().myCreatureSpecies == myCreatureInfo.acceptableMates [a]) 
+					{
+						if (colliders [i].gameObject.GetComponent<CreatureType>().myCreatureGender != myCreatureInfo.myCreatureGender) 
+						{
+							if (colliders [i].gameObject.GetComponent<CreatureType> ().creatureHunger >= (colliders [i].gameObject.GetComponent<CreatureType> ().maxCreatureHunger)) 
+							{
+								currentBreedTarget = colliders [i].gameObject;
+								if (colliders [i].gameObject.GetComponent<CreatureMovement> ().currentBreedTarget == null || colliders [i].gameObject.GetComponent<CreatureMovement> ().currentBreedTarget == this.gameObject) {
+									colliders [i].gameObject.GetComponent<CreatureMovement> ().currentBreedTarget = this.gameObject;
+									if (!isBreeding && !isEating) {
+										wander = false;
+										isBreeding = true;
+										currentTarget = colliders [i].gameObject.transform;
+										distanceFromTarget = Vector3.Distance (transform.position, currentTarget.position);
+										activeBreedCoroutine = StartCoroutine (Breed (colliders [i].gameObject));
+									}
+								} else {
+									currentBreedTarget = null;
+									break;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
     public static Vector3 RandomNavSphere(Vector3 origin, float dist, int layermask)
     {
         Vector3 randDirection = UnityEngine.Random.insideUnitSphere * dist;
@@ -134,4 +193,28 @@ public class CreatureMovement : MonoBehaviour {
             wander = true;
         }
     }
+
+	IEnumerator Breed (GameObject partner) {
+		CreatureType partnerInfo = partner.GetComponent<CreatureType> ();
+		while (distanceFromTarget > 1.5f) {
+			if (currentTarget != null) {
+				yield return new WaitForSeconds (0.3f);
+			} else {
+				yield break;
+			}
+		}
+		print ("Breed it!");
+		if (isBreeding == true) {
+			yield return new WaitForSeconds (2);
+			myCreatureInfo.creatureHunger -= 50;
+			if (myCreatureInfo.myCreatureGender == CreatureGender.Female) {
+				Vector3 difference = (transform.position - currentTarget.position) / 2;
+				Vector3 spawnPoint = transform.position + difference;
+				Instantiate (offspring, transform.position, Quaternion.identity);
+			}
+			yield return new WaitForSeconds (2);
+			isBreeding = false;
+			wander = true;
+		}
+	}
 }
