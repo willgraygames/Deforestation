@@ -16,6 +16,8 @@ public class CreatureMovement : MonoBehaviour {
     Coroutine activeEatCoroutine;
 	Coroutine activeBreedCoroutine;
 
+	public Animator myAnimator;
+
     public float wanderRadius;
     public float wanderTimer;
     private bool wander;
@@ -37,6 +39,7 @@ public class CreatureMovement : MonoBehaviour {
         agent = GetComponent<NavMeshAgent>();
         timer = wanderTimer;
         wander = true;
+		myAnimator = GetComponentInChildren<Animator> ();
     }
 
     void Update ()
@@ -49,6 +52,7 @@ public class CreatureMovement : MonoBehaviour {
             Collider[] colliders = Physics.OverlapSphere(transform.position, checkRadius, checkDropLayer);
             Array.Sort(colliders, new DistanceCompare(transform));
             CheckForFood(colliders);
+			myAnimator.SetBool ("isEating", false);
         } else
         {
             float lastDist = distanceFromTarget;
@@ -87,6 +91,12 @@ public class CreatureMovement : MonoBehaviour {
             agent.SetDestination(newPos);
             timer = 0;
         }
+
+		if (agent.velocity.x > 0 || agent.velocity.z > 0) {
+			myAnimator.SetBool ("isWalking", true);
+		} else {
+			myAnimator.SetBool ("isWalking", false);
+		}
     }
 
     void CheckForFood (Collider[] colliders)
@@ -171,7 +181,7 @@ public class CreatureMovement : MonoBehaviour {
     {
         Food currentFoodTarget = food.gameObject.GetComponent<Food>();
         print("Going to Target");
-        while (distanceFromTarget > 0.5f)
+        while (distanceFromTarget > 0.7f)
         {
             if (currentTarget != null)
             {
@@ -182,13 +192,16 @@ public class CreatureMovement : MonoBehaviour {
             }
         }
         print("Made It");
+
         if (isEating == true)
         {
+			myAnimator.SetBool ("isEating", true);
             print("Is Eating");
             //Throw in Animation for eating
             myCreatureInfo.creatureHunger += currentFoodTarget.foodValue;
             Destroy(food);
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(3);
+			myAnimator.SetBool ("isEating", false);
             isEating = false;
             wander = true;
         }
