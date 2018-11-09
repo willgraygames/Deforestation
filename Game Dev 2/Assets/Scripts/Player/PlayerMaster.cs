@@ -13,6 +13,7 @@ public class PlayerMaster : MonoBehaviour
     public Text interactText;                   //Reference to the text naming the player's current target
     public float interactRange;                 //The maximum range from the player to a target to be able to interact with it
     RaycastHit hit;                             //RaycastHit for when the player hits something while attacking
+    public Camera mainCamera;
 
     //Movement variables
     public float speed;                         //Speed at which the Player moves
@@ -21,6 +22,10 @@ public class PlayerMaster : MonoBehaviour
     Vector3 movement;                           //Player's movement value stored in a Vector3
     CapsuleCollider myCollider;                 //Reference to the Player's capsule collider
     Rigidbody rb3d;                             //Reference to the Player's rigidbody
+    public LayerMask dropsLayer;
+
+    //Inventory
+    public GameObject inventoryWindow;
 
     void Awake()
     {
@@ -35,20 +40,42 @@ public class PlayerMaster : MonoBehaviour
 
     void Update()
     {
+        Ray myRay = mainCamera.ScreenPointToRay(Input.mousePosition);
+
         //If ESC is pressed, unlock the cursor
         if (Input.GetButtonDown("Cancel"))
         {
             Cursor.lockState = CursorLockMode.None;
         }
 
-        //Sends out a raycast forward from the player to check if they are looking at something within range that is interactable. If they are, display the target's name and change the cursor 
-        //image to the appropriate sprite for the target object. Currently only doors have a dedicated sprite.
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, interactRange))
+        if (Input.GetButtonDown("Tab"))
         {
-            if (hit.collider.gameObject.tag == "Creature" || hit.collider.gameObject.tag == "Machine" || hit.collider.gameObject.tag == "Food")
+            if (inventoryWindow.activeInHierarchy == false)
             {
+                inventoryWindow.SetActive(true);
+                Cursor.lockState = CursorLockMode.None;
+            } else
+            {
+                inventoryWindow.SetActive(false);
+                Cursor.lockState = CursorLockMode.Locked;
+            }
+        }
+
+        if (Physics.Raycast(myRay, out hit, interactRange))
+        {
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward));
+            if (hit.collider.gameObject.tag == "Food" || hit.collider.gameObject.tag == "Machine" || hit.collider.gameObject.tag == "Food" || hit.collider.gameObject.layer == LayerMask.NameToLayer("Drops"))
+            {
+                print("hit something");
                 interactText.text = hit.collider.gameObject.name;
                 cursor.SetActive(true);
+                if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Drops"))
+                {
+                    if (Input.GetMouseButtonDown(0))
+                    {
+                        hit.collider.gameObject.GetComponent<Pickup>().PickupObject();
+                    }
+                }
             }
             else
             {
