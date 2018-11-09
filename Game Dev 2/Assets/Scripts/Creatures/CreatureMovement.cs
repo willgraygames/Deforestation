@@ -52,7 +52,6 @@ public class CreatureMovement : MonoBehaviour {
             Collider[] colliders = Physics.OverlapSphere(transform.position, checkRadius, checkDropLayer);
             Array.Sort(colliders, new DistanceCompare(transform));
             CheckForFood(colliders);
-			myAnimator.SetBool ("isEating", false);
         } else
         {
             float lastDist = distanceFromTarget;
@@ -172,10 +171,10 @@ public class CreatureMovement : MonoBehaviour {
         return navHit.position;
     }
 
-    private void OnDrawGizmos ()
+    /*private void OnDrawGizmos ()
     {
         Gizmos.DrawWireSphere(transform.position, checkRadius);
-    }
+    }*/
 
     IEnumerator Eat (GameObject food)
     {

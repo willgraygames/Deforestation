@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 54235847734568836}
   - component: {fileID: 64388534953995020}
   - component: {fileID: 114556522564718238}
+  - component: {fileID: 114837506696767052}
   m_Layer: 12
   m_Name: Chicken
   m_TagString: Food
@@ -128,3 +129,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   foodValue: 10
   myFoodType: 1
+--- !u!114 &114837506696767052
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1645321756851308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96c7d34aeaf6ded4e9fc367ee5b14dd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemButton: {fileID: 1483945660934030, guid: e657f424d3429454ea67bd493fc60135, type: 2}
