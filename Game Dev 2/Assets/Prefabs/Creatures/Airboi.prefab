@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4361558588507482}
   - component: {fileID: 137879606425823280}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Air_Monster_GEO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35,7 +35,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4464799742963388}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tail_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,9 +55,9 @@ GameObject:
   - component: {fileID: 195278812589196698}
   - component: {fileID: 114785373260069172}
   - component: {fileID: 54087509006804602}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Airboi
-  m_TagString: Untagged
+  m_TagString: Creature
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70,7 +70,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4352978923837446}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: R_Foot_IK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,7 +85,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4838415570986206}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: L_Heel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4409208043658374}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -115,7 +115,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4950660942297642}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,7 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4894129675232954}
   - component: {fileID: 95798891362627816}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Air Boi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +146,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4781493355579362}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: L_Ear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -161,7 +161,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4822823549163008}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: R_Elbow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -176,7 +176,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4305711505540734}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: L_Shoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -191,7 +191,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4294520252575488}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tail_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -206,7 +206,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4359711480482456}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: L_Ear_Tip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -221,7 +221,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4866613835437764}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: R_Arm_IK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -236,7 +236,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4390948569495662}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -251,7 +251,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4682585194315230}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: R_Ear_Tip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -268,7 +268,7 @@ GameObject:
   - component: {fileID: 4125554063245566}
   - component: {fileID: 33379009630377124}
   - component: {fileID: 23098454974337388}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Air_Boy1:Group53482
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -283,7 +283,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4833925530829348}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: R_Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -298,7 +298,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4408529922823084}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Chest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -313,7 +313,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4588542860512608}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: L_Arm_IK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -328,7 +328,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4041100192837900}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: L_Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +343,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4096479128958782}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tail_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -358,7 +358,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4649514125245132}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: R_Heel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -373,7 +373,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4360241032455256}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -388,7 +388,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4798715394283032}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tail_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -403,7 +403,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4967773819689638}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: R_Shoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -418,7 +418,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4081642554683198}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: L_Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -433,7 +433,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4571430918492470}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: R_Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -448,7 +448,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4996003519562466}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tail_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -463,7 +463,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4849911257954170}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: L_Knee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -478,7 +478,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4995164398163680}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: R_Ear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -493,7 +493,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4248919930023324}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tail_BOTTOM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -508,7 +508,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4982719807374444}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: L_Elbow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -523,7 +523,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4429139494803730}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tail_TOP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -538,7 +538,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4164370413717732}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tail_IK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -553,7 +553,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4990676631313828}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: R_Knee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -568,7 +568,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4200126645349866}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tail_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -583,7 +583,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4314643229851354}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: L_Foot_IK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1211,7 +1211,7 @@ MonoBehaviour:
   myNav: {fileID: 0}
   currentTarget: {fileID: 0}
   currentBreedTarget: {fileID: 0}
-  offspring: {fileID: 1149239664211810}
+  offspring: {fileID: 1877935209700016, guid: a33626a044f830e41bdb250f707b0dae, type: 2}
   myAnimator: {fileID: 0}
   wanderRadius: 10
   wanderTimer: 5
@@ -1239,12 +1239,12 @@ MonoBehaviour:
   myCreatureFood: 3
   myCreatureGender: 0
   drop: {fileID: 0}
-  acceptableMates: 00000000
+  acceptableMates: 03000000
   creatureHealth: 100
   maxCreatureHealth: 100
   creatureHappiness: 0
   maxCreatureHappiness: 100
-  creatureHunger: 50
+  creatureHunger: 100
   maxCreatureHunger: 100
 --- !u!135 &135569473783537774
 SphereCollider:
@@ -1254,7 +1254,7 @@ SphereCollider:
   m_GameObject: {fileID: 1149239664211810}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.73
   m_Center: {x: 0, y: 0, z: 0}

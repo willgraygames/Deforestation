@@ -128,7 +128,7 @@ public class CreatureMovement : MonoBehaviour {
 		{
 			if (colliders [i].gameObject.tag == "Creature") 
 			{
-				for (int a = 0; a < myCreatureInfo.acceptableMates.Length; a++) 
+                for (int a = 0; a < myCreatureInfo.acceptableMates.Length; a++) 
 				{
 					if (colliders [i].gameObject.GetComponent<CreatureType>().myCreatureSpecies == myCreatureInfo.acceptableMates [a]) 
 					{
@@ -179,7 +179,6 @@ public class CreatureMovement : MonoBehaviour {
     IEnumerator Eat (GameObject food)
     {
         Food currentFoodTarget = food.gameObject.GetComponent<Food>();
-        print("Going to Target");
         while (distanceFromTarget > 0.7f)
         {
             if (currentTarget != null)
@@ -190,12 +189,10 @@ public class CreatureMovement : MonoBehaviour {
                 yield break;
             }
         }
-        print("Made It");
 
         if (isEating == true)
         {
 			myAnimator.SetBool ("isEating", true);
-            print("Is Eating");
             //Throw in Animation for eating
             myCreatureInfo.creatureHunger += currentFoodTarget.foodValue;
             Destroy(food);
@@ -215,7 +212,6 @@ public class CreatureMovement : MonoBehaviour {
 				yield break;
 			}
 		}
-		print ("Breed it!");
 		if (isBreeding == true) {
 			yield return new WaitForSeconds (2);
 			myCreatureInfo.creatureHunger -= 50;

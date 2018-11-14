@@ -10,15 +10,6 @@ public class Item : MonoBehaviour {
     public Sprite icon;
     public GameObject prefab;
 
-    public Item (int id, string title, string description, Sprite icon, GameObject prefab)
-    {
-        this.id = id;
-        this.title = title;
-        this.description = description;
-        this.icon = icon;
-        this.prefab = prefab;
-    }
-
     public void PickupObject()
     {
         for (int i = 0; i < Inventory.Instance.slots.Length; i++)

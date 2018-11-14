@@ -11,6 +11,8 @@ public class Inventory : MonoBehaviour {
     public GameObject playerInventoryPanel;
     public GameObject[] slots;
     public GameObject[] currentInventoryItems;
+    public GameObject activeMachine;
+    public GameObject[] allMachines;
 
     private void Awake()
     {
@@ -28,6 +30,16 @@ public class Inventory : MonoBehaviour {
         for (int i = 0; i < slots.Length; i++)
         {
             slots[i].GetComponent<Slot>().UpdateSlotUI();
+        }
+        for (int i = 0; i < allMachines.Length; i++)
+        {
+            if (allMachines[i] != null)
+            {
+                for (int a = 0; a < allMachines[i].GetComponent<Machine>().mySlots.Length; a++)
+                {
+                    allMachines[i].GetComponent<Machine>().mySlots[a].UpdateSlotUI();
+                }
+            }
         }
     }
 }

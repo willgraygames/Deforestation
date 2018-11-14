@@ -9,48 +9,48 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1023863587793550}
+  m_RootGameObject: {fileID: 1877935209700016}
   m_IsPrefabAsset: 1
---- !u!1 &1023863587793550
+--- !u!1 &1877935209700016
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4726083579619210}
-  - component: {fileID: 33258939609223920}
-  - component: {fileID: 23147326089370542}
-  - component: {fileID: 54434966482705782}
-  - component: {fileID: 136122194365911374}
-  - component: {fileID: 114430551710261068}
-  - component: {fileID: 114019612660979112}
+  - component: {fileID: 4812573730962966}
+  - component: {fileID: 33665017458015208}
+  - component: {fileID: 23635414593567336}
+  - component: {fileID: 54645203230528644}
+  - component: {fileID: 136640988700181904}
+  - component: {fileID: 114510122527712072}
+  - component: {fileID: 114035604643617996}
   m_Layer: 12
-  m_Name: Waterboi Egg
+  m_Name: Airboi Egg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4726083579619210
+--- !u!4 &4812573730962966
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1023863587793550}
+  m_GameObject: {fileID: 1877935209700016}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.0978985, y: 0.428, z: -0.65259874}
+  m_LocalPosition: {x: -4.21, y: 0.428, z: -0.65259874}
   m_LocalScale: {x: 0.0031152056, y: 0.00431906, z: 0.0031152056}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23147326089370542
+--- !u!23 &23635414593567336
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1023863587793550}
+  m_GameObject: {fileID: 1877935209700016}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -60,7 +60,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: c106936b3d7bd4b4dbadcd4d588581df, type: 2}
+  - {fileID: 2100000, guid: 467889ebfbb70c44fbdbfcc1db2bbcc0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -80,19 +80,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33258939609223920
+--- !u!33 &33665017458015208
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1023863587793550}
+  m_GameObject: {fileID: 1877935209700016}
   m_Mesh: {fileID: 4300000, guid: 7139138f296097c4facaa44990a22276, type: 3}
---- !u!54 &54434966482705782
+--- !u!54 &54645203230528644
 Rigidbody:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1023863587793550}
+  m_GameObject: {fileID: 1877935209700016}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -102,42 +102,42 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &114019612660979112
+--- !u!114 &114035604643617996
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1023863587793550}
+  m_GameObject: {fileID: 1877935209700016}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 219850bc4b898a74ea95051035f3f5c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   id: 10
-  title: Waterboi Egg
-  description: The Egg of a Waterboi
-  icon: {fileID: 21300000, guid: acc5da7f5e4d649418bc3737fcef1b2e, type: 3}
-  prefab: {fileID: 1023863587793550}
---- !u!114 &114430551710261068
+  title: Airboi Egg
+  description: The Egg of an Airboi
+  icon: {fileID: 21300000, guid: 5c6fb8105416bb14b8887f3b5f9ee6f5, type: 3}
+  prefab: {fileID: 1877935209700016}
+--- !u!114 &114510122527712072
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1023863587793550}
+  m_GameObject: {fileID: 1877935209700016}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 10d297237801c3943a3e4259bd64301f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   incubateTime: 1000
-  myCreaturePrefab: {fileID: 1773234249698374, guid: f747e67cb94e0d046bc940ecb99a96ac,
+  myCreaturePrefab: {fileID: 1149239664211810, guid: ff02de7dfc68fec4c9e3533a86de9912,
     type: 2}
---- !u!136 &136122194365911374
+--- !u!136 &136640988700181904
 CapsuleCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1023863587793550}
+  m_GameObject: {fileID: 1877935209700016}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
