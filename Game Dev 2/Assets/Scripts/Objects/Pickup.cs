@@ -11,18 +11,4 @@ public class Pickup : MonoBehaviour {
 	void Start () {
         inventory = Inventory.Instance;
 	}
-	
-	public void PickupObject ()
-    {
-        for (int i = 0; i < inventory.slots.Length; i++)
-        {
-            if (inventory.isFull[i] == false)
-            {
-                inventory.isFull[i] = true;
-                inventory.currentInventoryItems.Add(gameObject);
-                gameObject.SetActive(false);
-                break;
-            }
-        }
-    }
 }
