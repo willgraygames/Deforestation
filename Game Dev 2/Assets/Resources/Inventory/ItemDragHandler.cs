@@ -24,7 +24,6 @@ public class ItemDragHandler : MonoBehaviour, IPointerDownHandler, IDragHandler,
         {
             if(eventData.button == PointerEventData.InputButton.Left)
             {
-                print("Down!");
                 isDragging = true;
                 originalParent = transform.parent;
                 transform.SetParent(transform.parent.parent.parent);

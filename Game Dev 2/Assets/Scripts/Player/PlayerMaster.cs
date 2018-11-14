@@ -26,6 +26,7 @@ public class PlayerMaster : MonoBehaviour
 
     //Inventory
     public GameObject inventoryWindow;
+    public GameObject[] interactionWindows;
 
     void Awake()
     {
@@ -52,19 +53,17 @@ public class PlayerMaster : MonoBehaviour
         {
             if (inventoryWindow.activeInHierarchy == false)
             {
-                inventoryWindow.SetActive(true);
-                Cursor.lockState = CursorLockMode.None;
+                OpenInventory();
             } else
             {
-                inventoryWindow.SetActive(false);
-                Cursor.lockState = CursorLockMode.Locked;
+                CloseAllWindows();
             }
         }
 
         if (Physics.Raycast(myRay, out hit, interactRange))
         {
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward));
-            if (hit.collider.gameObject.tag == "Creature" || hit.collider.gameObject.tag == "Machine")
+            if (hit.collider.gameObject.tag == "Creature")
             {
                 print("hit something");
                 interactText.text = hit.collider.gameObject.name;
@@ -77,6 +76,15 @@ public class PlayerMaster : MonoBehaviour
                 if (Input.GetMouseButtonDown(0))
                 {
                     hit.collider.gameObject.GetComponent<Item>().PickupObject();
+                }
+            } else if (hit.collider.gameObject.tag == "Machine")
+            {
+                interactText.text = hit.collider.gameObject.GetComponent<Machine>().title;
+                cursor.SetActive(true);
+                if (Input.GetMouseButtonDown(0))
+                {
+                    hit.collider.gameObject.GetComponent<Machine>().OpenInteractWindow();
+                    OpenInventory();
                 }
             } else
             {
@@ -133,5 +141,22 @@ public class PlayerMaster : MonoBehaviour
     {
         //Checks a capsule around the player equal to the player's capsule collider offset down to check if the ground is beneath the player. If it is, isGrounded returns true.
         return Physics.CheckCapsule(myCollider.bounds.center, new Vector3(myCollider.bounds.center.x, myCollider.bounds.center.y - 1f, myCollider.bounds.center.z), 0.18f, heightMask.value);
+    }
+
+    void CloseAllWindows ()
+    {
+        inventoryWindow.SetActive(false);
+        for (int i = 0; i < Inventory.Instance.allMachines.Length; i++)
+        {
+            Inventory.Instance.allMachines[i].GetComponent<Machine>().myPanel.SetActive(false);
+        }
+        Cursor.lockState = CursorLockMode.Locked;
+        Inventory.Instance.activeMachine = null;
+    }
+
+    void OpenInventory ()
+    {
+        inventoryWindow.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
     }
 }

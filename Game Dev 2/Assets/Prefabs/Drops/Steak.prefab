@@ -9,48 +9,48 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1023863587793550}
+  m_RootGameObject: {fileID: 1423615336250678}
   m_IsPrefabAsset: 1
---- !u!1 &1023863587793550
+--- !u!1 &1423615336250678
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4726083579619210}
-  - component: {fileID: 33258939609223920}
-  - component: {fileID: 23147326089370542}
-  - component: {fileID: 54434966482705782}
-  - component: {fileID: 136122194365911374}
-  - component: {fileID: 114430551710261068}
-  - component: {fileID: 114019612660979112}
+  - component: {fileID: 4775331039074876}
+  - component: {fileID: 33554631333555290}
+  - component: {fileID: 23440128187690306}
+  - component: {fileID: 64805226861858150}
+  - component: {fileID: 54966756875267948}
+  - component: {fileID: 114729459756485748}
+  - component: {fileID: 114318557473640284}
   m_Layer: 12
-  m_Name: Waterboi Egg
-  m_TagString: Untagged
+  m_Name: Steak
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4726083579619210
+--- !u!4 &4775331039074876
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1023863587793550}
+  m_GameObject: {fileID: 1423615336250678}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.0978985, y: 0.428, z: -0.65259874}
-  m_LocalScale: {x: 0.0031152056, y: 0.00431906, z: 0.0031152056}
+  m_LocalPosition: {x: -17.470139, y: 0.423, z: 8.141026}
+  m_LocalScale: {x: 0.00083343993, y: 0.0002969314, z: 0.00083343993}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23147326089370542
+--- !u!23 &23440128187690306
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1023863587793550}
+  m_GameObject: {fileID: 1423615336250678}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -60,7 +60,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: c106936b3d7bd4b4dbadcd4d588581df, type: 2}
+  - {fileID: 2100000, guid: a950dbf7b234d0e478eef09ee311346f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -80,19 +80,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33258939609223920
+--- !u!33 &33554631333555290
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1023863587793550}
-  m_Mesh: {fileID: 4300000, guid: 7139138f296097c4facaa44990a22276, type: 3}
---- !u!54 &54434966482705782
+  m_GameObject: {fileID: 1423615336250678}
+  m_Mesh: {fileID: 4300000, guid: 3bfeab528001ea74eba3adfe0783f800, type: 3}
+--- !u!54 &54966756875267948
 Rigidbody:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1023863587793550}
+  m_GameObject: {fileID: 1423615336250678}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -102,46 +102,46 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &114019612660979112
+--- !u!64 &64805226861858150
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1423615336250678}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 3bfeab528001ea74eba3adfe0783f800, type: 3}
+--- !u!114 &114318557473640284
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1023863587793550}
+  m_GameObject: {fileID: 1423615336250678}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 219850bc4b898a74ea95051035f3f5c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 10
-  title: Waterboi Egg
-  description: The Egg of a Waterboi
-  icon: {fileID: 21300000, guid: acc5da7f5e4d649418bc3737fcef1b2e, type: 3}
-  prefab: {fileID: 1023863587793550}
---- !u!114 &114430551710261068
+  id: 6
+  title: Steak
+  description: A Juicy Steak
+  icon: {fileID: 21300000, guid: f580947293c859145a93af476472ed44, type: 3}
+  prefab: {fileID: 1423615336250678}
+--- !u!114 &114729459756485748
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1023863587793550}
+  m_GameObject: {fileID: 1423615336250678}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10d297237801c3943a3e4259bd64301f, type: 3}
+  m_Script: {fileID: 11500000, guid: 38568f5a20a701b4fbd6d6d42fa6e826, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  incubateTime: 1000
-  myCreaturePrefab: {fileID: 1773234249698374, guid: f747e67cb94e0d046bc940ecb99a96ac,
-    type: 2}
---- !u!136 &136122194365911374
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1023863587793550}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 100
-  m_Height: 196.72336
-  m_Direction: 1
-  m_Center: {x: 0, y: 8.268093, z: 0.0000038146973}
+  foodValue: 10
+  myFoodType: 1

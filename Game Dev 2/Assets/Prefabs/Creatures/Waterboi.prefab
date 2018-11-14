@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4908639534133330}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: L_Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34,7 +34,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4083858013974898}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: R_Antler_Elbow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49,7 +49,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4138442399990036}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: R_Knee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65,7 +65,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4629992124258476}
   - component: {fileID: 95542760558578432}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Water_Idle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80,7 +80,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4019099486042830}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: L_Stash_End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4572904573298166}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4377083827526284}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: L_Leg_IK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,7 +125,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4444139980953912}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: R_Shoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -140,7 +140,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4093702038448512}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: R_Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,7 +155,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4184075365176556}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: L_Antler_IK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,7 +170,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4392709064019284}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -185,7 +185,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4715907571669428}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: L_Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,7 +200,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4082697755674188}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: R_Antler_IK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -215,7 +215,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4299585451327314}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: L_Knee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -230,7 +230,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4087082217660270}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: R_Stash_Elbow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -245,7 +245,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4102466526687314}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: R_Elbow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4378484985600320}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: R_Stash_End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -275,7 +275,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4279092547036332}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: L_Antler_Shoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -290,7 +290,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4826169557653570}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: R_Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -305,7 +305,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4260252114772144}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: L_Shoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -320,7 +320,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4903891441702638}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: L_Arm_IK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -335,7 +335,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4197533949217052}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: L_Stash_Shoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -350,7 +350,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4722096865326766}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: R_UpperLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -365,7 +365,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4870055682904300}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: R_Stash_Shoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -380,7 +380,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4727705777563576}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: L_UpperLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -395,7 +395,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4328097689832008}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Chest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -410,7 +410,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4303015783502258}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: R_Arm_IK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -430,9 +430,9 @@ GameObject:
   - component: {fileID: 195787582932777008}
   - component: {fileID: 114548094948108332}
   - component: {fileID: 54504314932694214}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Waterboi
-  m_TagString: Untagged
+  m_TagString: Creature
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -445,7 +445,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4927635995844012}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: R_Antler_End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -460,7 +460,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4128200371240372}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: R_Antler_Shoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -476,7 +476,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4217862122070620}
   - component: {fileID: 137159127340705786}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Water_GEO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -491,7 +491,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4830158322110780}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: L_Stache_IK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -506,7 +506,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4235825732944996}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -521,7 +521,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4937068172004688}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: L_Stash_Elbow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -536,7 +536,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4552124569458980}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: L_Antler_End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -551,7 +551,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4132639139831618}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: L_Elbow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -566,7 +566,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4612170153107980}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: L_Antler_Elbow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -581,7 +581,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4155823532420942}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -596,7 +596,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4879364473914454}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: R_Stache_IK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -611,7 +611,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4141450491802612}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: R_Leg_IK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1225,7 +1225,7 @@ MonoBehaviour:
   myNav: {fileID: 0}
   currentTarget: {fileID: 0}
   currentBreedTarget: {fileID: 0}
-  offspring: {fileID: 1773234249698374}
+  offspring: {fileID: 1023863587793550, guid: ee9ebdd5511b65144bd527a48756063a, type: 2}
   myAnimator: {fileID: 0}
   wanderRadius: 10
   wanderTimer: 5
@@ -1253,12 +1253,12 @@ MonoBehaviour:
   myCreatureFood: 1
   myCreatureGender: 0
   drop: {fileID: 0}
-  acceptableMates: 00000000
+  acceptableMates: 02000000
   creatureHealth: 100
   maxCreatureHealth: 100
   creatureHappiness: 0
   maxCreatureHappiness: 100
-  creatureHunger: 50
+  creatureHunger: 100
   maxCreatureHunger: 100
 --- !u!135 &135422076315119208
 SphereCollider:
@@ -1268,7 +1268,7 @@ SphereCollider:
   m_GameObject: {fileID: 1773234249698374}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.77
   m_Center: {x: 0, y: 0, z: 0}
