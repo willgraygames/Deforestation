@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 54627996920088800}
   - component: {fileID: 135639135326749596}
   - component: {fileID: 114069672043557700}
+  - component: {fileID: 114087841207024554}
   m_Layer: 12
   m_Name: Tomato
   m_TagString: Food
@@ -114,6 +115,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   foodValue: 10
   myFoodType: 3
+--- !u!114 &114087841207024554
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1635316965430962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 219850bc4b898a74ea95051035f3f5c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 1
+  title: Tomato
+  description: A juicy tomato
+  icon: {fileID: 21300000, guid: 9e3303f411d3a864fad30b9c339ae62b, type: 3}
+  prefab: {fileID: 1635316965430962}
 --- !u!135 &135639135326749596
 SphereCollider:
   m_ObjectHideFlags: 1

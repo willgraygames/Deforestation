@@ -64,20 +64,21 @@ public class PlayerMaster : MonoBehaviour
         if (Physics.Raycast(myRay, out hit, interactRange))
         {
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward));
-            if (hit.collider.gameObject.tag == "Food" || hit.collider.gameObject.tag == "Machine" || hit.collider.gameObject.tag == "Food" || hit.collider.gameObject.layer == LayerMask.NameToLayer("Drops"))
+            if (hit.collider.gameObject.tag == "Creature" || hit.collider.gameObject.tag == "Machine")
             {
                 print("hit something");
                 interactText.text = hit.collider.gameObject.name;
                 cursor.SetActive(true);
-                if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Drops"))
-                {
-                    if (Input.GetMouseButtonDown(0))
-                    {
-                        hit.collider.gameObject.GetComponent<Pickup>().PickupObject();
-                    }
-                }
             }
-            else
+            else if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Drops"))
+            {
+                interactText.text = hit.collider.gameObject.GetComponent<Item>().title;
+                cursor.SetActive(true);
+                if (Input.GetMouseButtonDown(0))
+                {
+                    hit.collider.gameObject.GetComponent<Item>().PickupObject();
+                }
+            } else
             {
                 interactText.text = "";
                 cursor.SetActive(false);

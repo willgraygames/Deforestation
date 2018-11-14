@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item {
+public class Item : MonoBehaviour {
 
     public int id;
     public string title;
@@ -17,5 +17,20 @@ public class Item {
         this.description = description;
         this.icon = icon;
         this.prefab = prefab;
+    }
+
+    public void PickupObject()
+    {
+        for (int i = 0; i < Inventory.Instance.slots.Length; i++)
+        {
+            if (Inventory.Instance.currentInventoryItems[i] == null)
+            {
+                Inventory.Instance.currentInventoryItems[i] = this.gameObject;
+                Inventory.Instance.slots[i].GetComponent<Slot>().myImageObject.SetActive(true);
+                Inventory.Instance.UpdateSlotUI();
+                gameObject.SetActive(false);
+                break;
+            }
+        }
     }
 }

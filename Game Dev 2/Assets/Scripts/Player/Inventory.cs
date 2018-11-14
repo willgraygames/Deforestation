@@ -8,9 +8,9 @@ public class Inventory : MonoBehaviour {
 
     public static Inventory Instance { get; protected set; }
 
-    public bool[] isFull;
+    public GameObject playerInventoryPanel;
     public GameObject[] slots;
-    public List<GameObject> currentInventoryItems = new List<GameObject>();
+    public GameObject[] currentInventoryItems;
 
     private void Awake()
     {
@@ -20,6 +20,14 @@ public class Inventory : MonoBehaviour {
         } else
         {
             Instance = this;
+        }
+    }
+
+    public void UpdateSlotUI ()
+    {
+        for (int i = 0; i < slots.Length; i++)
+        {
+            slots[i].GetComponent<Slot>().UpdateSlotUI();
         }
     }
 }
