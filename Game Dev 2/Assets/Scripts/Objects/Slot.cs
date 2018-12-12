@@ -113,7 +113,5 @@ public class Slot : MonoBehaviour, IDropHandler {
                 Inventory.Instance.UpdateSlotUI();
             }
         }
-
-
     }
 }
