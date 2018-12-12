@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour {
 
     public static GameManager Instance { get; protected set; }
 
-
+    public GameObject[] eggs;
     void Awake ()
     {
         if (Instance != null)
@@ -50,7 +50,8 @@ public enum CreatureSpecies
     Fireboi,
     Earthboi,
     Waterboi,
-    Airboi
+    Airboi,
+    Baseboi
 }
 
 public enum CreatureGender
